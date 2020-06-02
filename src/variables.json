@@ -1,0 +1,14 @@
+{
+  "main": "#272727;",
+  "secondary": "#fff",
+  "main-title": "#202020;",
+  "btn": "#250F8A",
+  "btn-yelllow": "#FFCA00",
+  "light-bg": "#F4F9FD",
+  "speed": "0.3s",
+
+  "bp-desktop-hd": "1800px",
+  "bp-desktop": "1200px",
+  "bp-tablets": "768px",
+  "bp-phones": "480px"
+}
