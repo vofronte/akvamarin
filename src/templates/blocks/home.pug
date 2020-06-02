@@ -1,0 +1,20 @@
+section.home
+  header.header
+    .container
+      .header__logo
+        .logo
+      nav.header__nav
+        - var menuList = [
+        -  { title: 'О Жилом Комплексе ', url: '#' },
+        -  { title: 'Квартиры', url: '#' },
+        -  { title: 'Выгодные предложения', url: '#' },
+        -  { title: 'Контакты', url: '#' }
+        - ];
+          ul.fast-nav
+            each menuItem in menuList
+              li.fast-nav__item
+                a(href=menuItem.url) #{menuItem.title}
+      .header__contacts
+        .contacts
+          a(href="tel:+78312020212").contacts__phone (831) 202-02-12
+          button(type="button").button-simple Заказать звонок
