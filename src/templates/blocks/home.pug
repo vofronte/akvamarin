@@ -1,20 +1,37 @@
 section.home
   header.header
-    .container
+    .container.header__container
       .header__logo
         .logo
+          a(href="#").logo__link
+            +icon('logo', 'logo__icon')
       nav.header__nav
         - var menuList = [
         -  { title: 'О Жилом Комплексе ', url: '#' },
         -  { title: 'Квартиры', url: '#' },
+        -  { title: 'Способы оплаты', url: '#' },
         -  { title: 'Выгодные предложения', url: '#' },
         -  { title: 'Контакты', url: '#' }
         - ];
           ul.fast-nav
             each menuItem in menuList
               li.fast-nav__item
-                a(href=menuItem.url) #{menuItem.title}
+                a(href=menuItem.url).fast-nav__link #{menuItem.title}
       .header__contacts
         .contacts
           a(href="tel:+78312020212").contacts__phone (831) 202-02-12
-          button(type="button").button-simple Заказать звонок
+          .contacts__button
+            button(type="button").button-simple Заказать звонок
+  aside.home-aside
+    .home-aside__text Нижний Новгород, ул. М. Горького, 117, 3 эт.
+    .home-aside__button
+      button(type="button").button-arrow
+        +icon('arrow', 'button-arrow-icon')
+  .home__slider
+    ul.home-slider
+      li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
+        .home-slider__suptitle Поможем осуществить мечту
+        .home-slider__title Ваша собственная квартира на берегу Оки
+        .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
+        .home-slider__button
+          button(type="button").button-basic Заказать консультацию
