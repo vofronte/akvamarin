@@ -1,0 +1,28 @@
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials_absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.socials__item {
+  margin-bottom: 15px;
+}
+
+.socials__item-icon {
+  width: 30px;
+  height: 30px;
+  fill: $secondary;
+  transition: fill $speed;
+
+  &:hover {
+    fill: $btn;
+  }
+}
