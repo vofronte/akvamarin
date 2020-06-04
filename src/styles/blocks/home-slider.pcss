@@ -1,6 +1,14 @@
+
 .home-slider {
   color: $secondary;
   height: 100%;
+  width: 100%;
+  
+  .slick-track,
+  .slick-list,
+  .slick-slide {
+    height: 100%;
+  }
 }
 
 .home-slider__item {
@@ -8,7 +16,7 @@
   background-size: cover;
   background-position: center;
   height: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;

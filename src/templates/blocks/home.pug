@@ -4,7 +4,7 @@ section.home
       .home-aside__text Нижний Новгород, ул. Петрова, д 23
       .home-aside__button
         button(type="button").button-arrow
-          +icon('arrow', 'button-arrow-icon')
+          +icon('arrow', 'button-arrow-icon animate__animated animate__fadeInDown animate__infinite alternate')
   .home__content
     .home__content-header
       header.header
@@ -32,21 +32,35 @@ section.home
     .home__content-body
       ul.home-slider
         li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
-          .home-slider__suptitle Поможем осуществить мечту
+          .home-slider__suptitle 1Поможем осуществить мечту
+          .home-slider__title Ваша собственная квартира на берегу Оки
+          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
+          .home-slider__button
+            button(type="button").button-basic Заказать консультацию
+        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
+          .home-slider__suptitle 2Поможем осуществить мечту
+          .home-slider__title Ваша собственная квартира на берегу Оки
+          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
+          .home-slider__button
+            button(type="button").button-basic Заказать консультацию
+        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
+          .home-slider__suptitle 3Поможем осуществить мечту
+          .home-slider__title Ваша собственная квартира на берегу Оки
+          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
+          .home-slider__button
+            button(type="button").button-basic Заказать консультацию
+        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
+          .home-slider__suptitle 4Поможем осуществить мечту
           .home-slider__title Ваша собственная квартира на берегу Оки
           .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
           .home-slider__button
             button(type="button").button-basic Заказать консультацию
       ul.socials.socials_absolute
-        li.socials__item
-          a(href="#").socials__item-link
-            +icon('instagram', 'socials__item-icon')
-        li.socials__item
-          a(href="#").socials__item-link
-            +icon('facebook', 'socials__item-icon')
-        li.socials__item
-          a(href="#").socials__item-link
-            +icon('youtube', 'socials__item-icon')
-        li.socials__item
-          a(href="#").socials__item-link
-            +icon('twitter', 'socials__item-icon')
+        - var socialList = [
+        -  { social: 'instagram', url: '#' }, { social: 'facebook', url: '#' },
+        -  { social: 'youtube', url: '#' }, { social: 'twitter', url: '#' },
+        - ];
+        each socialItem in socialList  
+          li.socials__item
+            a(href=socialItem.url).socials__item-link
+              +icon(socialItem.social, 'socials__item-icon')
