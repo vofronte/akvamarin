@@ -7,11 +7,14 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  overflow: hidden;
+  min-height: 0;
 }
 
 .home__content-body {
   position: relative;
   flex: 1;
+  min-height: 0;
 }
 
 .home__aside {
@@ -20,4 +23,17 @@
 
 .home__body-slider {
   flex: 1;
+}
+
+.home__slider {
+  height: 100%;
+}
+
+.home__slider-counter {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 64px;
+  right: 135px;
+
 }

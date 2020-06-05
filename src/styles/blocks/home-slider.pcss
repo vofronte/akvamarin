@@ -1,13 +1,16 @@
-
 .home-slider {
   color: $secondary;
   height: 100%;
-  width: 100%;
-  
-  .slick-track,
+
   .slick-list,
+  .slick-track {
+    height: 100% !important;
+  }
+
   .slick-slide {
-    height: 100%;
+    div:only-child  {
+      height: 100%;
+    }
   }
 }
 

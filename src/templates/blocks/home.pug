@@ -18,7 +18,7 @@ section.home
           -  { title: 'Квартиры', url: '#' },
           -  { title: 'Способы оплаты', url: '#' },
           -  { title: 'Выгодные предложения', url: '#' },
-          -  { title: 'Контакты', url: '#' }
+          -  { title: 'Контакты', url: '#' },
           - ];
             ul.fast-nav
               each menuItem in menuList
@@ -30,31 +30,41 @@ section.home
             .contacts__button
               button(type="button").button-simple Заказать звонок
     .home__content-body
-      ul.home-slider
-        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
-          .home-slider__suptitle 1Поможем осуществить мечту
-          .home-slider__title Ваша собственная квартира на берегу Оки
-          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
-          .home-slider__button
-            button(type="button").button-basic Заказать консультацию
-        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
-          .home-slider__suptitle 2Поможем осуществить мечту
-          .home-slider__title Ваша собственная квартира на берегу Оки
-          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
-          .home-slider__button
-            button(type="button").button-basic Заказать консультацию
-        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
-          .home-slider__suptitle 3Поможем осуществить мечту
-          .home-slider__title Ваша собственная квартира на берегу Оки
-          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
-          .home-slider__button
-            button(type="button").button-basic Заказать консультацию
-        li.home-slider__item(style=`background-image: url(${require("./images/content/home-slider-1.jpg")})`)
-          .home-slider__suptitle 4Поможем осуществить мечту
-          .home-slider__title Ваша собственная квартира на берегу Оки
-          .home-slider__subtitle ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам
-          .home-slider__button
-            button(type="button").button-basic Заказать консультацию
+      .home__slider
+        ul.home-slider
+          - var homeSliderList = [
+          -  { img: `background-image: url(${require("./images/content/home-slider-1.jpg")})`,
+          -    sup: 'Поможем осуществить мечту',
+          -    title: 'Ваша собственная квартира на берегу Оки',
+          -    sub: 'ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам'
+          -  },
+          -  { img: `background-image: url(${require("./images/content/home-slider-1.jpg")})`,
+          -    sup: '2Поможем осуществить мечту',
+          -    title: '2Ваша собственная квартира на берегу Оки',
+          -    sub: '2ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам'
+          -  },
+          -  { img: `background-image: url(${require("./images/content/home-slider-1.jpg")})`,
+          -    sup: '3Поможем осуществить мечту',
+          -    title: '3Ваша собственная квартира на берегу Оки',
+          -    sub: '3ЖК «Аквамарин» расположен на берегу Оки и досупен для каждого. Мы поможем с выбором лучшего для Вас варианта и проконсультируем по всем вопросам'
+          -  },
+          - ];
+          each homeSliderItem in homeSliderList
+            li.home-slider__item(style=homeSliderItem.img)
+              .home-slider__suptitle #{homeSliderItem.sup}
+              .home-slider__title #{homeSliderItem.title}
+              .home-slider__subtitle #{homeSliderItem.sub}
+              .home-slider__button
+                button(type="button").button-basic Заказать консультацию
+        .home__slider-counter
+          button(type="button").button-slder.button-slder_next +
+          .counter
+            .counter__pages
+              span.counter__pages-text_bold
+              span.counter__pages-text
+          button(type="button").button-slder.button-slder_prev -
+
+
       ul.socials.socials_absolute
         - var socialList = [
         -  { social: 'instagram', url: '#' }, { social: 'facebook', url: '#' },
