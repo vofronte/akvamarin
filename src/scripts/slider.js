@@ -25,5 +25,6 @@ $(function() {
 
   $('.about-slider-picture').slick({
     arrows: false,
+    asNavFor: $('.about-slider-info')
   });
 });

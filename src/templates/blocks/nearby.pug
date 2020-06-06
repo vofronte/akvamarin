@@ -1,0 +1,53 @@
+section.nearby
+  .nearby__title
+    h2.title Что находится рядом
+  .nearby__body
+    ul.nearby-list
+      li.nearby-list__item
+        .nearby-list__picture
+          .nearby-list__picture-img(style=`background-image: url(${require("images/content/nearby-walk.jpg")})`)
+        .nearby-list__info
+          .nearby-list__info-title Пешком
+          .nearby-list__info-time
+            ul.time-takes
+              li.time-takes__item
+                .time-takes__title 4 минуты 
+                .time-takes__destination До метро «Двигатель Революции»
+              li.time-takes__item
+                .time-takes__title 4 минуты 
+                .time-takes__destination До метро «Заречная»
+              li.time-takes__item
+                .time-takes__title 4 минуты 
+                .time-takes__destination До парка «Сиреневый сад»
+      li.nearby-list__item
+        .nearby-list__picture
+          .nearby-list__picture-img(style=`background-image: url(${require("images/content/nearby-bicycle.jpg")})`)
+        .nearby-list__info
+          .nearby-list__info-title На велосипеде
+          .nearby-list__info-time
+            ul.time-takes
+              li.time-takes__item
+                .time-takes__title 15 минут
+                .time-takes__destination До парка Сормовский
+              li.time-takes__item
+                .time-takes__title 15 минут
+                .time-takes__destination До парка Кулибина
+              li.time-takes__item
+                .time-takes__title 15 минут
+                .time-takes__destination До парка “Дубки”
+      li.nearby-list__item
+        .nearby-list__picture
+          .nearby-list__picture-img(style=`background-image: url(${require("images/content/nearby-car.jpg")})`)
+        .nearby-list__info
+          .nearby-list__info-title На машине
+          .nearby-list__info-time
+            ul.time-takes
+              li.time-takes__item
+                .time-takes__title 15 минут
+                .time-takes__destination До центра Нижнего Новгорода
+              li.time-takes__item
+                .time-takes__title 9 минут 
+                .time-takes__destination До Нижегородского кремля
+              li.time-takes__item
+                .time-takes__title 17 минут
+                .time-takes__destination До речного вокзала
