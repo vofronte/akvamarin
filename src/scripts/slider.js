@@ -14,4 +14,16 @@ $(function() {
     nextArrow: $('.button-slder_next'),
     fade: true
   });
+
+  $('.about-slider-info').slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: 'about-slider-dots',
+    asNavFor: $('.about-slider-picture')
+  });
+
+  $('.about-slider-picture').slick({
+    arrows: false,
+  });
 });
