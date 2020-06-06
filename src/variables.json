@@ -5,8 +5,9 @@
   "btn-yelllow": "#FFCA00",
   "light-bg": "#F4F9FD",
   "btn": "#FF8D4E;",
-  "about-slider-bg": "#2D2D2D;",
-  "nearby-titles": "#CFCFCF;",
+  "delimiter-bg": "#2D2D2D",
+  "nearby-titles": "#CFCFCF",
+  "placeholder": "#919191",
   "speed": "0.3s",
 
   "bp-desktop-hd": "1800px",

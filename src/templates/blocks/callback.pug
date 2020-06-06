@@ -1,0 +1,14 @@
+section.callback
+  .callback__body
+    .callback__info
+      .callback__info-title Закажите звонок и мы перезвоним Вам в течении 20 мин.
+      .callback__form
+        form.form-callback
+          .form-callback__input
+            input(type="text" placeholder="Имя").input-basic 
+          .form-callback__input
+            input(type="tel" placeholder="Телефон*").input-basic
+          .form-callback__button
+            button(type="submit").button-basic.button-basic_padding Заказать звонок
+    .callback__picture
+      .callback__picture-img(style=`background-image: url(${require("images/content/callback.jpg")})`)

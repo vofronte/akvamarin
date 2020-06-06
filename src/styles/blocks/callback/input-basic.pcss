@@ -1,0 +1,18 @@
+.input-basic {
+  height: 100%;
+  width: 100%;
+  padding: 18px 15px 17px 15px;
+  border: 2px solid transparent;
+  transition: border $speed;
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 20px;
+    color: $placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $btn;
+  }
+}
