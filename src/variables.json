@@ -1,13 +1,12 @@
 {
   "main": "#000000;;",
   "secondary": "#fff",
-  "main-title": "#202020;",
-  "btn-yelllow": "#FFCA00",
-  "light-bg": "#F4F9FD",
-  "btn": "#FF8D4E;",
+  "submain": "#FF8D4E;",
+
   "delimiter-bg": "#2D2D2D",
   "nearby-titles": "#CFCFCF",
   "placeholder": "#919191",
+  
   "speed": "0.3s",
 
   "bp-desktop-hd": "1800px",
