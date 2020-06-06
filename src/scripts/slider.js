@@ -15,16 +15,31 @@ $(function() {
     fade: true
   });
 
-  $('.about-slider-info').slick({
+  //about-complex slider
+  $('.about-complex-slider-info').slick({
     arrows: false,
     dots: true,
     fade: true,
-    dotsClass: 'about-slider-dots',
-    asNavFor: $('.about-slider-picture')
+    dotsClass: 'about-complex-slider-dots',
+    asNavFor: $('.about-complex-slider-picture')
   });
 
-  $('.about-slider-picture').slick({
+  $('.about-complex-slider-picture').slick({
     arrows: false,
-    asNavFor: $('.about-slider-info')
+    asNavFor: $('.about-complex-slider-info')
+  });
+
+  //about-company slider
+  $('.about-company-slider-info').slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: 'about-company-slider-dots',
+    asNavFor: $('.about-company-slider-picture')
+  });
+
+  $('.about-company-slider-picture').slick({
+    arrows: false,
+    asNavFor: $('.about-company-slider-info')
   });
 });
