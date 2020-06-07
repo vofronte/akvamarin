@@ -1,0 +1,45 @@
+section.gallery
+  .gallery__title
+    h2.title Фотогалерея
+  .gallery__body
+    .gallery__body-slider
+      ul.gallery-slider
+        li.gallery-slider__item
+          ul.gallery-photos
+            li.gallery-photos__item.gallery-photos__item-1
+              a(href="7648ef2152b35c69f61e6ae08d2695e6.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-1.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-2
+              a(href="8cef1d1d96e77733919c4d49f9e715ab.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-2.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-3
+              a(href="ffd27b5d63cc4f6a07bea1eb7a2b0417.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-3.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-4
+              a(href="5ce5e6926de8c6af6a7197dfcf5a3f19.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-4.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-5
+              a(href="1845644018995ff4f4a9e2c931435ab3.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-5.jpg', 'gallery-photos__item-img')
+        li.gallery-slider__item
+          ul.gallery-photos
+            li.gallery-photos__item.gallery-photos__item-1
+              a(href="7648ef2152b35c69f61e6ae08d2695e6.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-1.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-2
+              a(href="8cef1d1d96e77733919c4d49f9e715ab.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-2.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-3
+              a(href="ffd27b5d63cc4f6a07bea1eb7a2b0417.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-3.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-4
+              a(href="5ce5e6926de8c6af6a7197dfcf5a3f19.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-4.jpg', 'gallery-photos__item-img')
+            li.gallery-photos__item.gallery-photos__item-5
+              a(href="1845644018995ff4f4a9e2c931435ab3.jpg" data-lightbox="image-1")
+                +image('content/gallery-slider-5.jpg', 'gallery-photos__item-img')
+      .gallery__body-slider-buttons
+        button(type="button").button-slider-square.button-slider-square_next.button-slider-square_white
+          +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+        button(type="button").button-slider-square.button-slider-square_prev.button-slider-square_white
+          +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')

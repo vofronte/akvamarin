@@ -8,3 +8,4 @@ import "slick-carousel";
 import "./scripts/slider";
 import "jquery-ui/ui/widgets/tabs";
 import "./scripts/tabs";
+import "lightbox2/dist/js/lightbox";

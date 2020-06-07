@@ -6,10 +6,29 @@
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  transition: background-color $speed;
+
+  &:hover {
+    background-color: rgba(45, 45, 45, 1) !important;
+  }
 
   &_prev {
     right: initial;
     left: 0;
+
+    &.button-slider-square_white {
+      left: 33px;
+    }
+  }
+
+  &_white {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    right: 33px;
+    transition: background-color $speed;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5) !important;
+    }
   }
 }
 

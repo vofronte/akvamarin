@@ -1,0 +1,24 @@
+section.excursion
+  .excursion__title
+    h2.title Убедитесь в качестве лично
+  .excursion__body
+    .excursion__info
+      .excursion__info-data
+        h3.excursion__info-title Экскурсия по комплексу
+        .excursion__info-description
+          p Наши клиенты, которые хотели бы приобрести квартиру 
+            | в одной из квартир жилого комплекса, не только смогут получить полную консультацию по используемым материалам, 
+            | но также  увидеть и потрогать их вживую. Таким образом, потенциальные покупатели смогут увидеть, каким будет 
+            | их новое жилье. Экскурсия происходит по записи в любое удобное для Вас время.
+    .excursion__registration(style=`background-image: url(${require("images/content/excursion.jpg")})`)
+      .excursion__registration-info-wrap
+        .excursion__registration-info
+          h3.excursion__registration-title Записаться на экскурсию
+          .excursion__registration-form
+            form.registration-form
+              .registration-form__input
+                input.input(type="text" placeholder="Имя").input-basic 
+              .registration-form__input
+                input(type="tel" placeholder="Телефон*").input-basic
+              .registration-form__button
+                button(type="submit").button-basic.button-basic_padding.button-basic_width Записаться

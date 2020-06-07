@@ -53,13 +53,11 @@ $(function() {
     });
     
   });
-
-  // $('.room-tab__link').each(function() {
-  //   $(this).on('click', function() {
-  //     // $('.room-slider').slick('setPosition');
-  //     console.log($('.room-slider'));
-      
-  //   })
-  // })
+  
+  //gallery-slider
+  $('.gallery-slider').slick({
+    nextArrow: $('.gallery__body-slider-buttons .button-slider-square_next'),
+    prevArrow: $('.gallery__body-slider-buttons .button-slider-square_prev'),
+  });
 
 });
