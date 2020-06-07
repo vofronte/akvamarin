@@ -6,3 +6,5 @@ if (process.env.NODE_ENV === "development") {
 
 import "slick-carousel";
 import "./scripts/slider";
+import "jquery-ui/ui/widgets/tabs";
+import "./scripts/tabs";

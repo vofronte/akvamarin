@@ -1,0 +1,54 @@
+.room-sliders {
+  display: flex;
+  margin-left: -5%;
+  flex-wrap: wrap;
+}
+
+.room-sliders__item {
+  flex-basis: calc(100% / 2 - 5%) ;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow $speed;
+
+  &:hover {
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.44);
+
+    .room-sliders__buttons {
+      opacity: 1;
+    }
+
+    .room-sliders__info {
+      background-color: rgba(45, 45, 45, 0.8);
+    }
+  }
+}
+
+.room-sliders__info {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 5%;
+  background-color: rgba(45, 45, 45, 0.6);
+  transition: background-color $speed;
+  color: $secondary;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.room-sliders__info-type {
+  line-height: 21px;
+}
+
+.room-sliders__info-price {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.room-sliders__buttons {
+  opacity: 0;
+  transition: opacity $speed;
+}

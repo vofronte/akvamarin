@@ -42,4 +42,24 @@ $(function() {
     arrows: false,
     asNavFor: $('.about-company-slider-info')
   });
+
+  //room sliders
+  $('.room-slider').each(function() {
+    $(this).slick({
+      arrows: true,
+      infinite: true,
+      nextArrow: $(this).closest('.room-sliders__item').find('.button-slider-square_next'),
+      prevArrow: $(this).closest('.room-sliders__item').find('.button-slider-square_prev'),
+    });
+    
+  });
+
+  // $('.room-tab__link').each(function() {
+  //   $(this).on('click', function() {
+  //     // $('.room-slider').slick('setPosition');
+  //     console.log($('.room-slider'));
+      
+  //   })
+  // })
+
 });

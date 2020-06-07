@@ -1,0 +1,25 @@
+.room-tab__list {
+  display: flex;
+  width: 100%;
+}
+
+.room-tab__item {
+
+  &.ui-tabs-active {
+    .room-tab__link  {
+      color: $main;
+    }
+  }
+}
+
+.room-tab__link {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  color: $tab-link;
+  transition: color $speed;
+
+  &:hover {
+    color: $main;
+  }
+}

@@ -1,0 +1,175 @@
+section.choose-room
+  .choose-room__title
+    h2.title Выберите свою квартиру
+  .choose-room__body
+    .container
+      .choose-room__body-tabs
+        .room-tabs#room-tabs
+          .room-tabs__tab
+            .room-tab
+              ul.room-tab__list
+                li.room-tab__item
+                  a(href="#tab-all").room-tab__link Все
+                li.room-tab__item
+                  a(href="#tab-studio").room-tab__link Студия
+                li.room-tab__item
+                  a(href="#tab-one-room").room-tab__link 1-комнатная
+                li.room-tab__item
+                  a(href="#tab-two-room").room-tab__link 2-комнатная
+                li.room-tab__item
+                  a(href="#tab-three-room").room-tab__link 3-комнатная
+          .room-tabs__tab-pane
+            .room-tab-pane
+              ul.room-tab-pane__list
+                li.room-tab-pane__item#tab-all
+                  .room-tab-pane__item-sliders
+                    ul.room-sliders
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-studio.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-studio.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type Студия 24 м²
+                          .room-sliders__info-price 3 400 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 2-комн. кватрира  26 м²
+                          .room-sliders__info-price 3 690 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-three.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-three.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 3-комн. кватрира  38 м²
+                          .room-sliders__info-price 3 950 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two-32.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two-32.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 2-комн. кватрира  32 м²
+                          .room-sliders__info-price 3 780 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                    .room-tab-pane__button
+                      button(type='button').button-basic.button-basic_black Смотреть еще
+                li.room-tab-pane__item#tab-studio
+                  .room-tab-pane__item-sliders
+                    ul.room-sliders
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-studio.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-studio.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type Студия 24 м²
+                          .room-sliders__info-price 3 400 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                li.room-tab-pane__item#tab-one-room
+                  .room-tab-pane__item-sliders
+                    ul.room-sliders
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 1-комн. кватрира  22 м²
+                          .room-sliders__info-price 3 690 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                li.room-tab-pane__item#tab-two-room
+                  .room-tab-pane__item-sliders
+                    ul.room-sliders
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 2-комн. кватрира  26 м²
+                          .room-sliders__info-price 3 690 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two-32.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-two-32.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 2-комн. кватрира  32 м²
+                          .room-sliders__info-price 3 780 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')
+                li.room-tab-pane__item#tab-three-room
+                  .room-tab-pane__item-sliders
+                    ul.room-sliders
+                      li.room-sliders__item
+                        .room-sliders__item-slider
+                          ul.room-slider
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-three.jpg")})`)
+                            li.room-slider__item
+                              .room-slider__item-pic(style=`background-image: url(${require("images/content/room-slider-three.jpg")})`)
+                        .room-sliders__info
+                          .room-sliders__info-type 3-комн. кватрира  38 м²
+                          .room-sliders__info-price 3 950 000 ₽
+                        .room-sliders__buttons
+                          button(type="button").button-slider-square.button-slider-square_next
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_next')
+                          button(type="button").button-slider-square.button-slider-square_prev
+                            +icon('arrow-right', 'button-slider-square__icon button-slider-square__icon_prev')

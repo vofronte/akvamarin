@@ -1,0 +1,24 @@
+.button-slider-square {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(45, 45, 45, 0.8) !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+
+  &_prev {
+    right: initial;
+    left: 0;
+  }
+}
+
+.button-slider-square__icon {
+  width: 29px;
+  height: 16px;
+  fill: $secondary;
+
+  &_prev {
+    transform: rotate(-180deg);
+  }
+}
