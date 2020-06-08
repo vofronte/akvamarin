@@ -1,0 +1,23 @@
+.benefits-list {
+  line-height: 26px;
+  margin-top: 32px;
+}
+
+.benefits-list__item {
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 29px;
+    height: 23px;
+    background: svg-load('ticks.svg');
+    background-repeat: no-repeat;
+    float: left;
+    padding-right: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

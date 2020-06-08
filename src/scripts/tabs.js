@@ -4,4 +4,6 @@ $( function() {
       $('.room-slider').slick('setPosition');
     }
   });
+
+  $( "#payment-tabs" ).tabs();
 });

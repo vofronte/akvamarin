@@ -1,0 +1,91 @@
+section.payment
+  .payment__title
+    h2.title Способы оплаты
+  .payment__body
+    .container.payment__container
+      .payment__body-tabs
+        .payment-tabs#payment-tabs
+          .payment-tabs__tab
+            .payment-tab
+              ul.payment-tab__list
+                li.payment-tab__item
+                  a(href="#tab-mortgage").payment-tab__link Ипотека
+                li.payment-tab__item
+                  a(href="#tab-social-programs").payment-tab__link Соц.программы
+                li.payment-tab__item
+                  a(href="#tab-full-payment").payment-tab__link Полная оплата
+                li.payment-tab__item
+                  a(href="#tab-installment-plan").payment-tab__link Рассрочка
+          .payment-tabs__tab-pane
+            .payment-tab-pane
+              ul.payment-tab-pane__list
+                li.payment-tab-pane__item#tab-mortgage
+                  ul.payment-tab-pane__row-list
+                    li.payment-tab-pane__row-list-item
+                      .payment-tab-pane__col.payment-tab-pane__col-left
+                        .payment-tab-pane__title Получение ипотеки по сниженной ставке
+                        .payment-tab-pane__body
+                          .payment-tab-pane__desc
+                            p Наша компания предоставляет специальные ставки для своих клиентов. В тех случаях, когда у вас не хватает собственных средств, ведущие банки-партнеры, с которыми
+                              | мы сотрудничаем, помогут купить квартиру с помощью ипотеки.
+                          ul.benefits-list
+                            li.benefits-list__item Надежные банки
+                            li.benefits-list__item Привлекательные ставки
+                            li.benefits-list__item Доступные программы
+                            li.benefits-list__item Быстрое оформление
+                      .payment-tab-pane__col.payment-tab-pane__col-right
+                        .payment-tab-pane__title Наши банки-парнеры предоставляют ипотеку
+                        .payment-tab-pane__body.payment-tab-pane__body_margin
+                          .payment-tab-pane__action
+                            | от 
+                            span.payment-tab-pane__action_big 6%
+                            |  годовых
+                          .payment-tab-pane__partners
+                            ul.partners
+                              li.partners__item
+                                a(href="#")
+                                  +image('content/partner-1.png', 'partners__item-img')
+                              li.partners__item
+                                a(href="#")
+                                  +image('content/partner-2.png', 'partners__item-img')
+                              li.partners__item
+                                a(href="#")
+                                  +image('content/partner-3.png', 'partners__item-img')
+                              li.partners__item
+                                a(href="#")
+                                  +image('content/partner-4.png', 'partners__item-img')
+                    li.payment-tab-pane__row-list-item
+                      .payment-tab-pane__col.payment-tab-pane__col-left
+                        .payment-tab-pane__title Расчитать ипотеку
+                        .payment-tab-pane__body
+                          .mortgage-table
+                            .mortgage-table__name Тип квартиры
+                            .mortgage-table__choose-value
+                              ul.mortgage-table__radios
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-room').input-radio#room-1
+                                  label(for='room-1').input-radio__for студия
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-room').input-radio#room-2
+                                  label(for='room-2').input-radio__for 1-комн.
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-room').input-radio#room-3
+                                  label(for='room-3').input-radio__for 2-комн
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-room').input-radio#room-4
+                                  label(for='room-4').input-radio__for 3-комн
+
+
+
+                          
+                      .payment-tab-pane__col.payment-tab-pane__col-right
+
+
+
+
+                li.payment-tab-pane__item#tab-social-programs
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam nemo veniam deleniti nesciunt iste enim iure vitae nulla, unde tempora et id voluptates impedit quod blanditiis commodi facilis vero.
+                li.payment-tab-pane__item#tab-full-payment
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veritatis adipisci perspiciatis nesciunt numquam autem laborum aspernatur ratione, cupiditate quis dolores id tempora ipsum cumque ullam nihil officia ipsa animi.
+                li.payment-tab-pane__item#tab-installment-plan
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro repellat ipsa, veniam ipsam labore dignissimos quos velit accusamus enim nobis, consequuntur eum eaque officia adipisci illo, quod exercitationem suscipit.

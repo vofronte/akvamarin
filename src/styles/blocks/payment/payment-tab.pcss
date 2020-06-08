@@ -1,0 +1,25 @@
+.payment-tab__list {
+  display: flex;
+  width: 100%;
+}
+
+.payment-tab__item {
+
+  &.ui-tabs-active {
+    .payment-tab__link  {
+      color: $main;
+    }
+  }
+}
+
+.payment-tab__link {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  color: $tab-link;
+  transition: color $speed;
+
+  &:hover {
+    color: $main;
+  }
+}

@@ -60,4 +60,18 @@ $(function() {
     prevArrow: $('.gallery__body-slider-buttons .button-slider-square_prev'),
   });
 
+  //profit-slider
+  $('.profit-slider-info').slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    dotsClass: 'profit-slider-dots',
+    asNavFor: $('.profit-slider-picture')
+  });
+
+  $('.profit-slider-picture').slick({
+    arrows: false,
+    asNavFor: $('.profit-slider-info')
+  });
+
 });
