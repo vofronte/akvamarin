@@ -1,0 +1,48 @@
+.percent-rate {
+  cursor: pointer;
+  line-height: 21px;
+  position: relative;
+
+  .ui-slider-horizontal {
+    background-color: #464646;
+    height: 3px;
+    width: 100%;
+  }
+
+  .ui-slider-handle {
+    background: $main;
+    border: 3px solid $secondary;
+    width: 29px;height: 29px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.percent-rate__current {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 105%;
+  display: flex;
+
+  &::after {
+    content: '%';
+  }
+}
+
+.percent-rate__min,
+.percent-rate__max {
+  position: absolute;
+  bottom: -25px;
+}
+
+.percent-rate__min {
+  left: 0;
+}
+
+.percent-rate__max {
+  right: 0;
+}

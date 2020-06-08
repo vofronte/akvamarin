@@ -69,16 +69,66 @@ section.payment
                                   input(type='radio' name='radio-room').input-radio#room-2
                                   label(for='room-2').input-radio__for 1-комн.
                                 li.mortgage-table__radio-item
-                                  input(type='radio' name='radio-room').input-radio#room-3
+                                  input(type='radio' name='radio-room' checked).input-radio#room-3
                                   label(for='room-3').input-radio__for 2-комн
                                 li.mortgage-table__radio-item
                                   input(type='radio' name='radio-room').input-radio#room-4
                                   label(for='room-4').input-radio__for 3-комн
+                            .mortgage-table__name Общая площадь
+                            .mortgage-table__choose-value
+                              ul.mortgage-table__radios
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-area').input-radio#area-1
+                                  label(for='area-1').input-radio__for 44 м²
+                                li.mortgage-table__radio-item
+                                  input(type='radio' name='radio-area' checked).input-radio#area-2
+                                  label(for='area-2').input-radio__for 53 м²
+                            .mortgage-table__name Первый взнос
+                            .mortgage-table__choose-value
+                              .down-payment
+                                #down-payment-slider
+                                  #custom-handle.ui-slider-handle
+                                    .down-payment__current
+                                .down-payment__min 0
+                                .down-payment__max 5 000 000 ₽
+                            .mortgage-table__name Срок кредита
+                            .mortgage-table__choose-value
+                              .credit-term
+                                #credit-term-slider
+                                  #custom-handle.ui-slider-handle
+                                    .credit-term__current
+                                .credit-term__min 0
+                                .credit-term__max 40 лет
+                            .mortgage-table__name Проц. ставка
+                            .mortgage-table__choose-value
+                              .percent-rate
+                                #percent-rate-slider
+                                  #custom-handle.ui-slider-handle
+                                    .percent-rate__current
+                                .percent-rate__min 0
+                                .percent-rate__max 20%
+
+
+
 
 
 
                           
-                      .payment-tab-pane__col.payment-tab-pane__col-right
+                      .payment-tab-pane__col.payment-tab-pane__col-right.payment-tab-pane__col_bg-flex
+                        .total
+                          .total__title Итого:
+                          .total__info
+                            .total__info__name Ежемесячный платеж:
+                            .total__info__input
+                              input(type="number", value="21643").input-calc
+                            .total__info__name Сумма кредита:
+                            .total__info__input
+                              input(type="number", value="2830000").input-calc
+                            .total__info__name Мин. доход:
+                            .total__info__input
+                              input(type="number", value="47323 ₽").input-calc
+
+
 
 
 

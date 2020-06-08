@@ -74,4 +74,51 @@ $(function() {
     asNavFor: $('.profit-slider-info')
   });
 
+  //down-payment-slider
+  var numeral = require('numeral');
+  var handle = $( ".down-payment .down-payment__current" );
+  $( "#down-payment-slider" ).slider({
+    range: "min",
+    value: 810653,
+    min: 0,
+    max: 5000000,
+    create: function() {
+      handle.text( numeral($( this ).slider( "value")).format('0,0'));
+    },
+    slide: function( event, ui ) {
+      handle.text( numeral(ui.value).format('0,0'));
+    }
+  });
+
+  //credit-term-slider
+  var handle2 = $( ".credit-term .credit-term__current" );
+  $( "#credit-term-slider" ).slider({
+    range: "min",
+    value: 5,
+    min: 0,
+    max: 40,
+    create: function() {
+      handle2.text( $( this ).slider( "value"));
+    },
+    slide: function( event, ui ) {
+      handle2.text( ui.value);
+    }
+  });
+
+  //percent-rate-slider
+  var handle3 = $( ".percent-rate .percent-rate__current" );
+  $( "#percent-rate-slider" ).slider({
+    range: "min",
+    value: 3.5,
+    min: 0,
+    max: 20,
+    step: 0.1,
+    create: function() {
+      handle3.text( $( this ).slider( "value"));
+    },
+    slide: function( event, ui ) {
+      handle3.text( ui.value);
+    }
+  });
+
 });
