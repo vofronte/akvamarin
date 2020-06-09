@@ -1,0 +1,14 @@
+section.questions
+  .questions__body
+    .questions__info
+      .questions__info-title Остались вопросы? Закажите звонок и мы Вам перезвоним
+      .questions__form
+        form.form-questions
+          .form-questions__input
+            input(type="text" placeholder="Имя").input-basic 
+          .form-questions__input
+            input(type="tel" placeholder="Телефон*").input-basic
+          .form-questions__button
+            button(type="submit").button-basic.button-basic_padding Заказать звонок
+    .questions__picture
+      .questions__picture-img(style=`background-image: url(${require("images/content/questions.jpg")})`)

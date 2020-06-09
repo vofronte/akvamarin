@@ -2,7 +2,7 @@ ymaps.ready(init);
 function init(){
     var myMap = new ymaps.Map("find-us__map-ya", {
         center: [56.305879, 44.087491],
-        zoom: 12,
+        zoom: 13,
         controls: ['zoomControl']
     });
 
@@ -13,10 +13,10 @@ function init(){
   myPlacemark = new ymaps.Placemark([56.295582, 44.104470], {
       hintContent: 'Офис продаж',
   }, {
-      iconLayout: 'default#image',
-      iconImageHref: 'images/pin-map.png',
-      iconImageSize: [46, 57],
-  }),
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: 'https://sergeev.press/pin-map.png',
+      iconImageSize: [55, 79],
+  });
 
   myMap.geoObjects
   .add(myPlacemark);

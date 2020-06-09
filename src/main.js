@@ -11,3 +11,4 @@ import "jquery-ui/ui/widgets/tabs";
 import "./scripts/tabs";
 import "lightbox2/dist/js/lightbox";
 import "./scripts/ya-map";
+import "./scripts/humburger-menu";

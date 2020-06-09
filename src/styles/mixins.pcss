@@ -4,6 +4,24 @@
   }
 }
 
+@mixin desktopMiniHd() {
+  @media screen and (max-width: $bp-desktop-hd-mini) {
+    @content;
+  }
+}
+
+@mixin desktopMini() {
+  @media screen and (max-width: $bp-desktop-mini) {
+    @content;
+  }
+}
+
+@mixin desktopMiniMin() {
+  @media screen and (min-width: $bp-desktop-mini) {
+    @content;
+  }
+}
+
 @mixin desktop() {
   @media screen and (max-width: $bp-desktop) {
     @content;

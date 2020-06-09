@@ -1,0 +1,44 @@
+.header {
+  padding: 1.4% 9% 1.4% 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include desktopMini {
+    justify-content: flex-end;
+    padding: 1.4% 2% 1.4% 2%;
+  }
+
+  
+}
+
+.header__nav {
+  margin: 0 20px;
+
+  @include desktopMini {
+    display: none;
+  }
+
+  @include desktopMiniMin {
+    display: block;
+  }
+
+}
+
+.header__logo {
+  @include desktopMini {
+    flex: 1;
+    justify-self: start;
+  }
+}
+
+
+.header__humburger-button {
+  display: none;
+
+  @include desktopMini {
+    display: flex;
+  }
+
+  margin-left: 24px;
+}

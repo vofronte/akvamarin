@@ -1,0 +1,58 @@
+footer.footer
+  .container.footer__container
+    .footer__text-info
+      .footer__text-info-row
+        .footer__logo
+          .logo
+            a(href="#").logo__link
+              +icon('logo_white', 'logo__icon')
+        nav.footer__nav
+          - var menuList = [
+          -  { title: 'О Жилом Комплексе ', url: '#' },
+          -  { title: 'Квартиры', url: '#' },
+          -  { title: 'Способы оплаты', url: '#' },
+          -  { title: 'Выгодные предложения', url: '#' },
+          -  { title: 'Контакты', url: '#' },
+          - ];
+            ul.fast-nav
+              each menuItem in menuList
+                li.fast-nav__item
+                  a(href=menuItem.url).fast-nav__link #{menuItem.title}
+        .footer__contacts
+          .contacts
+            a(href="tel:+78312020212").contacts__phone (831) 202-02-12
+            .contacts__button
+              button(type="button").button-simple Заказать звонок
+      .footer__text-info-row
+        ul.footer__info-contacts
+          li.footer__info-contacts-item
+            .footer__info-title Адрес ЖК «Аквамарин»:
+            .footer__info-desc Нижний Новгород, ул. Петрова, д 23
+          li.footer__info-contacts-item
+            .footer__info-title Адрес отдела продаж: 
+            .footer__info-desc Нижний Новгород, ул. М. Горького, 117, 3 эт.
+          li.footer__info-contacts-item
+            .footer__info-title Режим работы:
+            .footer__info-desc
+              | Пн-Пт: с 8:00 до 21:00
+              br
+              | Сб-Вс: с 10:00 до 21:00
+          li.footer__info-contacts-item
+            .footer__info-title Телефон:
+            .footer__info-desc 
+              a(href="tel:+78312020212") (831) 202-02-12
+          li.footer__info-contacts-item
+            .footer__info-title e-mail:
+            .footer__info-desc 
+              a(href="mailto:info@akvamarin-nn.ru") info@akvamarin-nn.ru
+      .footer__socials
+        ul.socials
+          - var socialList = [
+          -  { social: 'instagram', url: '#' }, { social: 'facebook', url: '#' },
+          -  { social: 'youtube', url: '#' }, { social: 'twitter', url: '#' },
+          - ];
+          each socialItem in socialList  
+            li.socials__item
+              a(href=socialItem.url).socials__item-link
+                +icon(socialItem.social, 'socials__item-icon')
+      .footer__copy Все права защищены©
