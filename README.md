@@ -7,6 +7,10 @@
 + Webpack 4
 + jQuery
 
+<p align='center'>
+<img src='http://lessons.sergeev.press/akvarin-1st-screen.jpg' width='100%'>
+</p>
+
 [**Демо**](https://sergeev-vn.github.io/akvamarin)
 
 ## Чтобы развернуть проект необходимо:
