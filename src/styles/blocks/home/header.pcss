@@ -35,10 +35,18 @@
 
 .header__humburger-button {
   display: none;
-
+  
   @include desktopMini {
     display: flex;
+    margin-left: 24px;
   }
 
-  margin-left: 24px;
+  @include desktopMini {
+    margin-left: 15px;
+  }
+
+  @include phones {
+    margin-left: 10px;
+  }
+
 }
